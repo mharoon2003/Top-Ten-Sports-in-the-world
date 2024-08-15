@@ -66,6 +66,16 @@ flutter:
     - assets/football.jpg
     - assets/cricket.jpg
     - assets/baseball.jpg
+    - assets/volleyball2.jpg
+    - assets/tennis.jpg
+    - assets/table tennis.jpg
+    - assets/hockey.jpg
+    - assets/golf.jpg
+    - assets/badminton.jpg
+    - assets/basketball.jpg
+    - assets/players/
+    - assets/top10.jpg
+    - assets/five.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
