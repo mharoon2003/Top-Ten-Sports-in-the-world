@@ -1,6 +1,6 @@
 # second_app
 
-Top The Sports
+Top The Sports!
 
 ## Getting Started
 
