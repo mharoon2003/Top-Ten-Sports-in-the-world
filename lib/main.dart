@@ -29,8 +29,9 @@ class Sport {
   final String details;
   final String moredetails;
   final String image;
+  final String gamelink;
 
-  Sport(this.name, this.details, this.moredetails, this.image);
+  Sport(this.name, this.details, this.moredetails, this.image, this.gamelink);
 }
 
 // class player
