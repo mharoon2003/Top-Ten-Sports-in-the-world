@@ -55,13 +55,7 @@ class _PlayerInformationState extends State<PlayerInformation> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.info), label: 'Info'),
-        ],
-        selectedItemColor: Colors.blueAccent,
-      ),
+
     );
   }
 }

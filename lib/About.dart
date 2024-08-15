@@ -30,8 +30,7 @@ class _AboutState extends State<About> {
               children: [
                  Column(
                   children: [
-                    Text('''
-                  About the''',
+                    Text(''' About the App  ''',
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold
