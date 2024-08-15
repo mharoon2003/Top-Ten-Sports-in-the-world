@@ -86,12 +86,14 @@ class _DetailPageState extends State<DetailPage> {
 
                    Expanded(
                      child: ElevatedButton(
-                       child: Text('The Desktop Game of the  ${widget.sport.name}',
+                       child: Text('Game of the  ${widget.sport.name}',
                          style: TextStyle(
                              fontWeight: FontWeight.bold,
                              color: Colors.black
                          ),),
-                       onPressed: () {},
+                       onPressed: () {
+                         launchURL(widget.sport.gamelink);
+                       },
                      ),
                    ),
                  ],
