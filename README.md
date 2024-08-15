@@ -1,6 +1,6 @@
 # second_app
 
-secound version of the app
+Top The Sports
 
 ## Getting Started
 
