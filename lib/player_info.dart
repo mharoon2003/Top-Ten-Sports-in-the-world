@@ -59,7 +59,12 @@ class _PlayerInformationState extends State<PlayerInformation> {
                   launchURL(widget.player.website);
                   // Open player website link
                 },
-                child: Text('More about ${widget.player.name}'),
+                child: Text('More about ${widget.player.name}',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white
+                ),
+                ),
               ),
             ],
           ),

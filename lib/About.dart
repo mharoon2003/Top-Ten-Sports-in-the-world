@@ -5,6 +5,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:second_app/player_info.dart';
+
 
 class About extends StatefulWidget {
   const About({super.key});
@@ -92,13 +94,24 @@ class _AboutState extends State<About> {
                     Row(
                       children: [
                         Expanded(
-                          child: IconButton(onPressed: (){},
+                          child: IconButton(onPressed: (){
+                            setState(() {
+                              launchURL('https//t.me/MHN_298');
+                            });
+                            //FlutterShareMe().shareToTelegram(msg: "https//t.me/MHN_298");
+                          },
                               icon: Icon(Icons.telegram_outlined),
                             color: Colors.blue,
                           splashColor: Colors.pink[200],),
                         ),
                         Expanded(
-                          child: IconButton(onPressed: (){},
+                          child: IconButton(onPressed: (){
+                            setState(() {
+                              launchURL("https//www.facebook.com/profile.php?id=100088150762663");
+                            });
+
+                           // FlutterShareMe().shareToFacebook(msg:"https//www.facebook.com/profile.php?id=100088150762663" );
+                          },
                               icon: Icon(Icons.facebook_outlined),
                             color: Colors.deepPurple,
                           splashColor: Colors.pink[200],),

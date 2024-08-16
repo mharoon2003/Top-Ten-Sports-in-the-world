@@ -1,4 +1,4 @@
-package com.example.second_app
+package com.example.secound_version
 
 import io.flutter.embedding.android.FlutterActivity
 

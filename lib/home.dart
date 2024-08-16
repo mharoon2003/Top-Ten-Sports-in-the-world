@@ -1,6 +1,6 @@
 //Home page
 import 'dart:io';
-
+import 'package:share_plus/share_plus.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -80,7 +80,16 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title:
-          Text("Top Ten Sports"),
+          Row(
+            children: [
+              Image.asset("assets/top10.jpg",
+                width:200,
+                height: 90,),
+              Text("Sports"),
+
+
+            ],
+          ),
 
       backgroundColor: Colors.purple[200],
         actions: [
@@ -88,23 +97,28 @@ class _HomePageState extends State<HomePage> {
               color: Colors.purple[200],
               shadowColor: Colors.blue,
               onSelected: (String value){
-                if (value == 'About'){
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>
-                      const About(),
-                      )
-                  );
-                }
-                if(value == 'exit'){
-                  exit(0);
-                }
+                setState(() {
+                  if (value == 'About'){
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) =>
+                        const About(),
+                        )
+                    );
+                  }else
+                  if(value == '1'){
+                    Navigator.pop(context);
+                  }
+                  else if(value == "2"){
+                    Share.share("com.example.second_app");
+                  }else(){};
+                });
               },
 
               itemBuilder:(BuildContext context) =>
               [
                 PopupMenuItem(
                   padding: EdgeInsets.fromLTRB(0,5, 0, 0),
-                  value: 'Share',
+                  value: '2',
                   child:
                   ListTile(
                     leading: Icon(Icons.share),
@@ -113,7 +127,7 @@ class _HomePageState extends State<HomePage> {
                 ),
 
                 PopupMenuItem(
-                  value: 'exit',
+                  value: '1',
                   child:
                   ListTile(
                     leading: Icon(Icons.exit_to_app),

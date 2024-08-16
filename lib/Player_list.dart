@@ -38,14 +38,15 @@ class _PlayersListState extends State<PlayersList> {
       body: Stack(
         children:[
           Positioned.fill(child:
-          Image.asset("assets/five.jpg")
+          Image.asset("assets/five.jpg",
+          fit: BoxFit.cover,),
           ),
           ListView.builder(
         itemCount: widget.players.length,
         itemBuilder: (context, index) {
           return Card(
             margin: EdgeInsets.all(5),
-            color: Colors.pink[100],
+            color: Colors.white38,
             child: ListTile(
               leading: Image.asset(widget.players[index].image1),
               splashColor: Colors.pink[300],
@@ -53,7 +54,9 @@ class _PlayersListState extends State<PlayersList> {
                   borderRadius: BorderRadius.circular(14)
               ),
               hoverColor: Colors.brown[300],
-              title: Text(widget.players[index].name),
+              title: Text(widget.players[index].name,
+              style: TextStyle(color: Colors.white,
+              fontWeight: FontWeight.bold),),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (context) =>

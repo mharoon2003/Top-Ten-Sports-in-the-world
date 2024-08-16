@@ -1,6 +1,6 @@
-# second_app
+# secound_version
 
-Top The Sports!
+A new Flutter project.
 
 ## Getting Started
 
