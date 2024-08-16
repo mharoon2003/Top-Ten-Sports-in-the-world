@@ -179,7 +179,8 @@ class _HomePageState extends State<HomePage> {
                   ),
                   textAlign: TextAlign.justify,
                 ),
-                leading: Image.asset(sports[index].image,),
+                leading: Image.asset(sports[index].image,
+                width: 60,height: 60,),
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) =>
