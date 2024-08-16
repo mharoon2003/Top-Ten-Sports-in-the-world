@@ -29,9 +29,9 @@ class _DetailPageState extends State<DetailPage> {
   widget.sport.name == 'Tennis' ? tennisPlayers :
   widget.sport.name == 'Baseball' ? baseballPlayers :
   widget.sport.name == 'Hockey' ? hockeyPlayers :
-  widget.sport.name == 'Rugby' ? badmintoPlayers :
+  widget.sport.name == 'Badminton' ? badmintoPlayers :
   widget.sport.name == 'Golf' ? golfPlayers :
-  widget.sport.name == 'Boxing' ? volleyBallplayers :
+  widget.sport.name == 'Volleyball' ? volleyBallplayers :
   tableTennisPlayers;
 
 
