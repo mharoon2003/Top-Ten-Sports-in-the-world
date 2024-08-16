@@ -17,7 +17,7 @@ home page with popup meno;
 link of about page:
 ![about_page1](<img src="https://github.com/user-attachments/assets/a51f7da1-7de7-4d10-899f-5bbe72a539b8" width="300" height="200" alt="My Project Image">)
 
-link of players list:
+ sport details:
 ![deta![list_of_five_players](https://github.com/user-attachments/assets/a6154e64-69e4-4a04-b7b8-a56d27f780ef)
 ils_page](https://github.com/user-attachments/assets/0f760de5-0afd-43ab-ba62-03db9133b21f)
 
