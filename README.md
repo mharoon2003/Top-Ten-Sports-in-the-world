@@ -1,6 +1,8 @@
 # secound_version
 
-A new Flutter project.
+This is an app about the ten popular sports of the world and every sport is explained also five top players of each sport is introduced.
+Also you there is link for the game of each sport that you can simply download and play.
+
 
 ## Getting Started
 
